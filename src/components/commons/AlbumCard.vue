@@ -1,5 +1,5 @@
 <template>
-  <div class="album-card m-3">
+  <div class="album-card m-3 p-2">
       <img class="album-img" :src="album.poster" :alt="album.title">
         <h5 class="album-title text-white mt-3">{{album.title}}</h5>
         <span class="album-author">{{album.author}}</span>
