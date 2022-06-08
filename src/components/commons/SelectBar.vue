@@ -1,20 +1,27 @@
 <template>
    <section>
         <div class="select">
-            <select>
-                <option value="1">Seleziona un genere</option>
-                <option value="2">Rock</option>
-                <option value="3">Pop</option>
-                <option value="4">Jazz</option>
-                <option value="5">Metal</option>
+            <select name="type" id="type" v-model="select.value">
+                <option value="All">Tutti i generi</option>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Metal">Metal</option>
             </select>
         </div>
     </section>
 </template>
 
 <script>
+import select from '../../shared/selected.js';
+
 export default {
     name: 'SelectBar',
+    data() {
+        return {
+            select
+        };
+    },
 }
 </script>
 
