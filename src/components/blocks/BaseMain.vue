@@ -1,15 +1,18 @@
 <template>
     <main>
+    <SelectBar/>
     <SectionAlbums/>
     </main>
 </template>
 
 <script>
+import SelectBar from '../commons/SelectBar.vue';
 import SectionAlbums from '../sections/SectionAlbums.vue';
 
 export default {
     name: 'BaseMain',
     components: {
+        SelectBar,
         SectionAlbums 
     },
 }
