@@ -2,7 +2,7 @@
   <section>
         <div class="container pt-5">
             <div class="row">
-                <AlbumCard class="col col-sm-6 col-lg-2"  v-for="(album, index) in albums" :key="index" :album="album"/>    
+                <AlbumCard class="col-12 col-sm-5 col-md-3 col-lg-2"  v-for="(album, index) in albums" :key="index" :album="album"/>    
             </div>
         </div>
         <div class="container">
